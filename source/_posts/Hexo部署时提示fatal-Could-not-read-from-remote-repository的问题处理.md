@@ -1,7 +1,7 @@
 title: Hexo部署时提示Fatal： Could not read from remote repository的问题处理
 date: 2015-10-02 09:41:26
 categories: Hexo
-tags: [Hexo, git]
+tags: [Hexo, Git]
 ---
 
 第一次在Mac中配置好了hexo,发布的时候却一直提示：
