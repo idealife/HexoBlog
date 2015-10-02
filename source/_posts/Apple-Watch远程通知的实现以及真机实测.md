@@ -1,7 +1,7 @@
 title: Apple Watch远程通知的实现以及真机实测
 date: 2015-10-02 17:09:55
 categories: iDev
-tags: [AppleWatch,通知]
+tags: [Apple Watch,通知]
 ---
 **题记：**任何一款优秀产品的背后都是一群为此呕心沥血的程序猿，前方多坑，注意避让！
 
