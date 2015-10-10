@@ -23,7 +23,7 @@ tags: [Apple Watch,通知]
 <!--more-->
 **自定义推送通知样式的代码示例：**
 1、在手机端app的AppDelegate中注册推送通知的影响按钮
-```
+``` objc
 - (void)registerSettingsAndCategories {
 // Create a mutable set to store the category definitions.
 NSMutableSet* categories = [NSMutableSet set];
@@ -60,7 +60,7 @@ UIUserNotificationSettings* settings = [UIUserNotificationSettings settingsForTy
 上述代码是在 appdelegate 中的
 -(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions调用的。
 2、设置推送服务器`Apns server`的消息如下
-```
+``` objc
   {
     "aps" : {
         "alert" : {
@@ -73,7 +73,7 @@ UIUserNotificationSettings* settings = [UIUserNotificationSettings settingsForTy
   }
 ```
 3、在WatchKitExtention中处理前台的按钮事件
-```
+``` objc
 - (void)handleActionWithIdentifier:(NSString *)identifier forRemoteNotification:(NSDictionary *)remoteNotification{
      if ([identifier isEqualToString:@"Repondre"]) {
         //Do stuff Here to handle action... 
@@ -81,7 +81,7 @@ UIUserNotificationSettings* settings = [UIUserNotificationSettings settingsForTy
  }
 ```
 4、 在手机端app的appDelegate中处理后台的按钮事件[因推送服务器调整对线上版本有影响，暂未验证]:
-```
+``` objc
 - (void)application:(UIApplication *)application handleActionWithIdentifier:(NSString *)identifier forRemoteNotification:(NSDictionary *)userInfo completionHandler:(void (^)())completionHandler {
      if ([identifier isEqualToString:@"Decline"]) {
         //Do stuff Here to handle action... 
@@ -90,7 +90,7 @@ UIUserNotificationSettings* settings = [UIUserNotificationSettings settingsForTy
 }
 ```
 注册为后台类型的按钮在手机的通知框中也会显示，在手机端的响应方式如下
-```
+``` objc
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
 }
 ```

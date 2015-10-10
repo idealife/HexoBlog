@@ -1,7 +1,7 @@
 title: Wacth app无法在watchOS2.0中安装的问题探索
 date: 2015-10-01 21:41:26
 categories: iDev
-tags: [Apple Watch, Xcode7.0, watchOS2.0]
+tags: [Apple Watch, Xcode, watchOS2.0]
 ---
 
 ### 问题描述：
