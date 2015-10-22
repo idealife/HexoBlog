@@ -13,3 +13,8 @@ tags: [Xcode, Mac OS X]
 <!--more-->
 费尽周折，果不其然，在“偏好设置”–“通用”中找到了滚动条的显示设置，如下图
 ![图片](https://raw.githubusercontent.com/idealife/idealife.github.io/master/img/4_3.png)
+
+如果系统的设置是“根据鼠标或触控板自动显示”
+![图片](https://raw.githubusercontent.com/idealife/idealife.github.io/master/img/4_3.png)
+并且Mac是连接了Magic mouse或者Trackpad的，那么即使Automatically Hide Scroller不选择，默认情况下也是不显示滚动条的，只有滚动的时候才会出现。
+但一旦断开这些设备，用普通USB鼠标，那么滚动条则会一直显示。
