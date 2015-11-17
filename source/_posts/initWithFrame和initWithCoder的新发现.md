@@ -1,7 +1,7 @@
 title: initWithFrame和initWithCoder的新发现
 date: 2015-10-10 09:38:52
 categories: iDev
-tags: [OSX,Xcode]
+tags: [Mac OS X,Xcode]
 ---
 **背景**
 一般的认识是这样子的：
